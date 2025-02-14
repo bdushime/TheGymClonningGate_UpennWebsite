@@ -641,6 +641,12 @@
   .z-10 {
     z-index: 10;
   }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-30 {
+    z-index: 30;
+  }
   .z-auto {
     z-index: auto;
   }
@@ -997,6 +1003,9 @@
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-\[160px\] {
+    width: 160px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -1794,6 +1803,9 @@
   .border-gray-500 {
     border-color: var(--color-gray-500);
   }
+  .border-gray-700 {
+    border-color: var(--color-gray-700);
+  }
   .border-transparent {
     border-color: transparent;
   }
@@ -1844,6 +1856,9 @@
   }
   .bg-black\/70 {
     background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+  }
+  .bg-black\/90 {
+    background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
   }
   .bg-blue-900 {
     background-color: var(--color-blue-900);
@@ -2409,6 +2424,9 @@
   .text-gray-50 {
     color: var(--color-gray-50);
   }
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -2917,6 +2935,13 @@
       }
     }
   }
+  .group-hover\:rotate-180 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 180deg;
+      }
+    }
+  }
   .group-hover\:border-\[1px\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -3007,6 +3032,13 @@
     &:hover {
       @media (hover: hover) {
         color: #2F4673;
+      }
+    }
+  }
+  .hover\:text-amber-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-amber-500);
       }
     }
   }
