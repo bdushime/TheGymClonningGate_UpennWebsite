@@ -998,6 +998,9 @@
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
   .w-\[85\%\] {
     width: 85%;
   }
@@ -3107,6 +3110,11 @@
       display: none;
     }
   }
+  .md\:inline {
+    @media (width >= 48rem) {
+      display: inline;
+    }
+  }
   .md\:h-\[500px\] {
     @media (width >= 48rem) {
       height: 500px;
@@ -3155,6 +3163,11 @@
   .md\:items-start {
     @media (width >= 48rem) {
       align-items: flex-start;
+    }
+  }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
     }
   }
   .md\:space-y-0 {
