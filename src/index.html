@@ -10,7 +10,7 @@
 </head>
 <body>
   <!--PreHero section-->
-   <section id="prehero">
+   <section id="pre-hero">
 
     <div class="w-full bg-[#011f5b] py-4">
       <div class="mx-auto max-w-[1800px] px-4">
@@ -30,7 +30,7 @@
 
 
   <!-- Hero Section -->
-<section class="relative w-full h-auto">
+<section id="hero" class="relative w-full h-auto">
   <img src="https://www.upenn.edu/sites/default/files/styles/crop_5x3/public/2025-02/avian-bird-flu.jpg?h=d0d32c2c" 
        alt="birds image" 
        class="absolute w-full h-full object-cover top-0 left-0 z-0">
@@ -39,13 +39,13 @@
   <div class="md:hidden w-full bg-black/70 relative z-20 flex items-center justify-between px-4 py-4">
       <img src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg" alt="pennsylvania logo" class="w-[160px]">
       <div class="flex items-center gap-4">
-          <!-- Mobile Search Icon -->
+         
           <button class="text-white">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
               </svg>
           </button>
-          <!-- Hamburger Menu -->
+          
           <button id="mobileMenuButton" class="text-white">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -57,7 +57,6 @@
   <!-- Mobile Menu Dropdown -->
   <div id="mobileMenu" class="md:hidden hidden absolute w-full bg-black/90 z-30">
       <div class="px-4 py-6 space-y-6">
-          <!-- ... (same mobile menu content as before) ... -->
       </div>
   </div>
 
@@ -69,14 +68,12 @@
           </a>
           <div class="w-full py-[5px] flex flex-col items-center justify-between">
               <div class="w-full flex items-center border-b border-gray-400 justify-end gap-[15px]">
-                  <!-- Search Icon -->
                   <button class="p-2 text-white hover:text-amber-500 transition-all duration-300">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                       </svg>
                   </button>
-                  
-                  <!-- Resources Dropdown -->
+              
                   <div class="relative w-40 group">
                       <button class="flex w-full items-center gap-[5px] text-white text-[0.9rem] group-hover:text-black bg-transparent p-[20px] cursor-pointer">
                           <span class="leading-none font-semibold">RESOURCES</span>
@@ -84,17 +81,15 @@
                               class="w-4 h-4 mt-px ml-2 transition-transform group-hover:rotate-180">
                       </button>
                       <div class="absolute hidden w-40 group-hover:flex bg-white top-full -left-[4.5px] flex-col gap-[10px] py-[20px] mt-1 shadow-lg">
-                          <!-- ... (same dropdown items as before) ... -->
+                      
                       </div>
                   </div>
                   
-                  <!-- Give to Penn Button -->
+             
                   <a href="/" class="text-[0.9rem] font-semibold text-white px-[20px] py-[20px] bg-[#990000] hover:bg-[#990000]/90">
                       GIVE TO PENN
                   </a>
               </div>
-
-              <!-- Main Navigation Links with Arrows -->
               <div class="w-full flex items-center justify-end gap-[20px] px-[20px]">
                   <a href="/" class="flex items-center gap-1 text-white text-[0.9rem] font-semibold hover:text-amber-500 transition-all duration-300 py-[10px]">
                       ACADEMICS
